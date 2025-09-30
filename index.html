@@ -30,11 +30,7 @@
   <!-- NEW: Container for T04-3 chart -->
   <div class="responsive-svg-container"></div> 
   
-  <!-- Load D3 first, then your D3 code file -->
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <!-- NEW: T04-4 loader -->
-  <script src="t04-4-load.js"></script> 
-
+  
   <!-- Old js files -->
   <!-- <script src="t04-3-bars.js"></script>  -->
   <!-- Old T04-2 demo (disabled temporarily) -->
@@ -46,7 +42,7 @@
         Appliances account for a significant portion of household electricity use in Australia.
         Choosing efficient models and using them wisely can shrink bills and emissions.
       </p>  
-
+      
       <section aria-labelledby="home-habits">
         <h2 id="home-habits">Adopt everyday energy-smart habits</h2>
         <ul>
@@ -58,11 +54,16 @@
       </section>
     </article>
   </main>
-
+  
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> · Min Thaw Khant · GenAI-assisted content/code noted above</p>
   </footer>
-
+  
+  <!-- Load D3 first, then your D3 code file -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- NEW: T04-4 loader -->
+  <script src="t04-4-load.js"></script>  // loads CSV then calls createBarChart
+  <script src="t04-5-bars.js"></script>  // defines createBarChart
   <script src="script.js"></script>
 </body>
 </html>

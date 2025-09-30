@@ -14,9 +14,9 @@
 //     console.log(data); // array of typed objects
 // });
 
-function createBarChart(data) {
-  console.log("createBarChart received", data.length, "rows");
-}
+// function createBarChart(data) {
+//   console.log("createBarChart received", data.length, "rows");
+// }
 /* Load CSV, Convert Type, Quick Check */
 d3.csv("data/tvBrandCount.csv", d => ({
     brand: d.brand,
